@@ -35,26 +35,23 @@ const SignIn = () => {
           </div>
 
           <form>
-            <div className="mb-3">
-              {/* <label>Email address</label> */}
+            <div class="form-floating mb-3">
               <input
                 type="email"
-                className="form-control"
-                placeholder="Enter email"
-                onChange={(e) => setUserName(e.target.value)}
-                // onClick={location}
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
               />
+              <label for="floatingInput">Email address</label>
             </div>
-
-            <div className="mb-3">
-              {/* <label>Password</label> */}
+            <div class="form-floating">
               <input
                 type="password"
-                className="form-control"
-                placeholder="Enter password"
-                onChange={(e) => setPassword(e.target.value)}
-                // size="50px"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
               />
+              <label for="floatingPassword">Password</label>
             </div>
 
             <div className="mb-3">
